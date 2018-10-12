@@ -32,6 +32,7 @@ def play(my_songs)
       if choice == my_songs 
         puts "Playing #{choice}"
         valid = true
+<<<<<<< HEAD
       else (choice.to_i - 1 == index)
         puts "Playing #{my_songs[index]}"
         valid = true
@@ -39,6 +40,19 @@ def play(my_songs)
   end
   puts "Invalid input, please try again"
   valid = false
+=======
+      elsif choice == my_songs.each_with_index 
+        puts "Playing #{choice}"
+        valid = true
+      elsif (choice.to_i - 1 == index)
+        puts "Playing #{my_songs[index]}"
+        valid = true
+      else
+        puts "Invalid input, please try again"
+        valid = false
+     end
+  end
+>>>>>>> 8531b1546c2ebfc0a8945bea7473296f32d02159
 end
 
 
@@ -47,6 +61,7 @@ def exit_jukebox
   puts "Goodbye"
 end
   
+<<<<<<< HEAD
   
 def run(my_songs)
   loop do 
@@ -65,3 +80,5 @@ def run(my_songs)
   end
   exit_jukebox
 end
+=======
+>>>>>>> 8531b1546c2ebfc0a8945bea7473296f32d02159
